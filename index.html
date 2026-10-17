@@ -1,41 +1,300 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Kelompok 3</title>
+
+    <title>The Powerpuff Girls</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Home</h1>
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            POWERPUFF GIRLS
+        </div>
 
-    <p>
-        Halo teman-teman serta Bapak/Ibu guru yang kami hormati.
-        Pada kesempatan ini kami dari kelompok 3 akan
-        mempresentasikan hasil pekerjaan kami.
-    </p>
-</header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#process">Process</a>
+            <a href="#product">Product</a>
+        </nav>
+    </header>
 
-<main>
 
-    <div class="slide">
-        <img src="gambar/slide1.jpg" alt="Presentasi Kelompok">
-    </div>
+    <!-- HOME -->
+    <section id="home" class="hero">
 
-    <h3>Informatika Kelompok 8 X-A</h3>
-    <p>Oleh ANNISA DWI PERTIWI</p>
+        <div class="hero-text">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="design.html">Design</a>
-        <a href="process.html">Process</a>
-        <a href="product.html">Product</a>
-    </nav>
+            <p class="subtitle">
+                THE POWERPUFF GIRLS
+            </p>
 
-</main>
+            <h1>
+                GIRLS<br>
+                <span>WHO CAN DO</span><br>
+                ANYTHING!
+            </h1>
+
+            <p>
+                Halo teman-teman dan Bapak/Ibu Guru yang kami hormati.
+                Selamat datang di website kelompok kami.
+                Website ini dibuat sebagai bagian dari proyek
+                Informatika Kelompok 3.
+            </p>
+
+            <button onclick="scrollToSection('about')">
+                EXPLORE WEBSITE
+            </button>
+
+        </div>
+
+
+        <!-- KARAKTER -->
+        <div class="girls">
+
+            <div class="girl blossom">
+                <div class="head">
+                    <div class="eye left-eye"></div>
+                    <div class="eye right-eye"></div>
+                </div>
+
+                <div class="body"></div>
+
+                <p>BLOSSOM</p>
+            </div>
+
+
+            <div class="girl bubbles">
+                <div class="head">
+                    <div class="eye left-eye"></div>
+                    <div class="eye right-eye"></div>
+                </div>
+
+                <div class="body"></div>
+
+                <p>BUBBLES</p>
+            </div>
+
+
+            <div class="girl buttercup">
+                <div class="head">
+                    <div class="eye left-eye"></div>
+                    <div class="eye right-eye"></div>
+                </div>
+
+                <div class="body"></div>
+
+                <p>BUTTERCUP</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <p class="subtitle">
+            ABOUT US
+        </p>
+
+        <h2>
+            WHO ARE WE?
+        </h2>
+
+        <p>
+            Kami adalah Kelompok 3 dari kelas X-A.
+            Kami membuat proyek ini dengan menggabungkan
+            kreativitas, kerja sama, dan teknologi.
+            Website ini terinspirasi dari tema The Powerpuff Girls
+            dengan konsep warna yang ceria dan menyenangkan.
+        </p>
+
+    </section>
+
+
+    <!-- VIDEO -->
+    <section class="video-section">
+
+        <p class="subtitle">
+            OUR PRESENTATION
+        </p>
+
+        <h2>
+            PROJECT VIDEO
+        </h2>
+
+        <div class="video-box">
+
+            <video controls>
+
+                <source src="video.mp4" type="video/mp4">
+
+                Browser kamu tidak mendukung video.
+
+            </video>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROCESS -->
+    <section id="process" class="process">
+
+        <p class="subtitle">
+            OUR PROCESS
+        </p>
+
+        <h2>
+            HOW WE MADE IT
+        </h2>
+
+
+        <div class="cards">
+
+            <div class="card pink">
+
+                <div class="number">
+                    01
+                </div>
+
+                <h3>
+                    DESIGN
+                </h3>
+
+                <p>
+                    Menentukan konsep, warna,
+                    tampilan, dan tema website.
+                </p>
+
+            </div>
+
+
+            <div class="card blue">
+
+                <div class="number">
+                    02
+                </div>
+
+                <h3>
+                    PROCESS
+                </h3>
+
+                <p>
+                    Membuat website menggunakan
+                    HTML, CSS, dan JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="card green">
+
+                <div class="number">
+                    03
+                </div>
+
+                <h3>
+                    PRODUCT
+                </h3>
+
+                <p>
+                    Menghasilkan website kelompok
+                    yang kreatif dan menarik.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCT -->
+    <section id="product" class="product">
+
+        <p class="subtitle">
+            OUR PRODUCT
+        </p>
+
+        <h2>
+            POWERPUFF PROJECT
+        </h2>
+
+        <div class="product-box">
+
+            <div class="heart">
+                ♥
+            </div>
+
+            <h3>
+                INFORMATIKA X-A
+            </h3>
+
+            <p>
+                BIALKEAL – Wings of Courage
+
+BIALKEAL merupakan gabungan nama dari Habibah, Aulia, Ike, dan Aaliyah yang melambangkan persatuan empat anggota dalam satu tim yang memiliki tujuan dan semangat yang sama.
+
+Empat sayap kupu-kupu melambangkan keempat anggota yang saling melengkapi, bekerja sama, dan saling mendukung. Setiap sayap memiliki bentuk dan karakteristik tersendiri, tetapi semuanya bersatu membentuk keindahan yang utuh.
+
+Kupu-kupu melambangkan transformasi, pertumbuhan, dan keberanian untuk berubah menjadi lebih baik. Seperti kupu-kupu yang melewati proses sebelum dapat terbang dengan indah, BIALKEAL percaya bahwa setiap tantangan merupakan bagian dari perjalanan untuk berkembang, menjadi lebih kuat, dan berani menghadapi masa depan.
+
+Makna warna:
+
+- Biru tua: Melambangkan keberanian, kepercayaan diri, dan keteguhan.
+- Hijau: Melambangkan pertumbuhan, harapan, dan keseimbangan.
+- Emas: Melambangkan kesuksesan, semangat, dan nilai berharga dari kebersamaan.
+
+Kesimpulan: BIALKEAL adalah simbol empat individu yang bersatu dalam keberanian, tumbuh melalui tantangan, dan terbang menuju kesuksesan bersama.
+            </p>
+
+            <button onclick="showMessage()">
+                VIEW PROJECT
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>
+            THE POWERPUFF GIRLS
+        </h2>
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAHXPcsy0mI/v5ASROW1d_Pa1RBz7jX3Yw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHXPcsy0mI&#x2F;v5ASROW1d_Pa1RBz7jX3Yw&#x2F;view?utm_content=DAHXPcsy0mI&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">THE POWER PUFF GIRLS</a> oleh Sudarsono Ike
+
+        <p>
+            Informatika Kelompok 8 - X-A
+        </p>
+
+        <p class="copyright">
+            © 2026 Kelompok 8
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
-                                   </html>
+
+</html>
