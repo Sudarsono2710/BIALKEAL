@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #a8ff20;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    padding: 15px 25px;
+    background: #a8ff20;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+header p {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+main {
+    padding: 15px;
+}
+
+.slide {
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #555;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #174c9c;
+    margin: 0 4px;
+}
