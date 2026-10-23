@@ -4,402 +4,322 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #191919;
+  font-family: Arial, sans-serif;
+  background: #f4f9f5;
+  color: #243b35;
   line-height: 1.7;
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 section {
-  scroll-margin-top: 75px;
-}
-
-.section {
-  padding: 90px 7%;
-  text-align: center;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: clamp(30px, 5vw, 46px);
-  margin: 18px 0 35px;
-}
-
-.subtitle {
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 5px;
+  scroll-margin-top: 85px;
 }
 
 /* NAVBAR */
 .navbar {
-  min-height: 100px;
-  padding: 20px 5%;
-  background: white;
-  border-bottom: 5px solid #191919;
+  background: #173f36;
+  color: white;
+  padding: 18px 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .brand {
-  font-size: 22px;
-  font-weight: 900;
+  color: #f3d47a;
+  letter-spacing: 2px;
 }
 
-.navbar nav {
+.nav-links {
   display: flex;
-  gap: 22px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
-.navbar nav a {
-  font-weight: bold;
-  transition: color 0.2s;
-}
-
-.navbar nav a:hover {
-  color: #ed419a;
-}
-
-/* TOMBOL */
-.button {
-  display: inline-block;
-  background: white;
-  border: 4px solid #191919;
-  border-radius: 50px;
-  padding: 14px 28px;
-  font-weight: 800;
-  box-shadow: 5px 6px 0 #191919;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.button:hover {
-  transform: translate(3px, 3px);
-  box-shadow: 2px 3px 0 #191919;
-}
-
-/* HOME */
-.hero {
-  background: #ffb5dc;
-  padding: 100px 7% 110px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: clamp(40px, 8vw, 66px);
-  font-weight: 900;
-  line-height: 1.02;
-  margin: 28px 0;
-}
-
-.hero h1 span {
+.nav-links a {
   color: white;
-  -webkit-text-stroke: 2px #191919;
-  text-shadow: 3px 3px #191919;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f3d47a;
+}
+
+/* BERANDA */
+.hero {
+  min-height: 500px;
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: linear-gradient(135deg, #e5f2e8, #fff7df);
 }
 
 .hero-text {
-  max-width: 720px;
-  margin: 30px auto 35px;
-  font-size: 20px;
-  line-height: 1.9;
+  flex: 1;
 }
 
-/* KARAKTER */
-.girls {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 70px;
-}
-
-.girl {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.face {
-  width: 105px;
-  height: 105px;
-  border: 4px solid #191919;
-  border-radius: 50%;
-  background: #ffe0b8;
-  display: grid;
-  place-items: center;
-  font-size: 35px;
-  letter-spacing: 5px;
-}
-
-.body {
-  width: 88px;
-  height: 80px;
-  border: 4px solid #191919;
-  border-radius: 15px 15px 25px 25px;
-}
-
-.blossom {
-  background: #ff4a9d;
-}
-
-.bubbles {
-  background: #5dc9f7;
-}
-
-.buttercup {
-  background: #7cdb54;
-}
-
-/* ABOUT */
-.about {
-  background: white;
-  min-height: 450px;
-}
-
-.about > p:last-child {
-  max-width: 780px;
-  margin: auto;
-  font-size: 20px;
-  line-height: 2;
-}
-
-/* PROCESS */
-.process {
-  background: #fff3f9;
-}
-
-.process-list {
-  max-width: 850px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
-  text-align: left;
-}
-
-.process-card {
-  padding: 30px;
-  border: 4px solid #191919;
-  border-radius: 28px;
-  box-shadow: 8px 8px 0 #191919;
-}
-
-.process-card h3 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.process-card h4 {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
-.process-card p {
-  font-size: 17px;
-}
-
-.pink {
-  background: #ff9dce;
-}
-
-.blue {
-  background: #82d8f7;
-}
-
-.green {
-  background: #9ae77a;
-}
-
-/* LOGO BIALKEAL */
-.logo-section {
-  background: #ffe96f;
-}
-
-.logo-card {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 35px;
-  background: white;
-  border: 4px solid #191919;
-  border-radius: 30px;
-  box-shadow: 10px 10px 0 #191919;
-}
-
-/* FOTO LOGO */
-.logo-image {
-  width: 100%;
-  max-width: 430px;
-  margin: 0 auto 25px;
-}
-
-.logo-image img,
-.logo-foto {
-  display: block;
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  object-fit: contain;
-  margin: 25px auto;
-}
-
-.logo-card h3 {
-  font-size: 32px;
-  margin-bottom: 5px;
-}
-
-.logo-caption {
-  color: #555;
+.subtitle {
+  color: #b58a28;
+  font-size: 13px;
   font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #21836b;
+}
+
+.hero-text > p:not(.subtitle) {
+  max-width: 520px;
   margin-bottom: 25px;
 }
 
-.logo-card > p,
-.color-meaning p {
-  font-size: 17px;
-  line-height: 1.9;
-  margin-bottom: 20px;
+.hero-image {
+  flex: 1;
+  text-align: center;
 }
 
-.color-meaning {
-  background: #fff3f9;
+.hero-image img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 50%;
+  filter: drop-shadow(0 12px 18px #173f3625);
+  transition: 0.4s;
+}
+
+.hero-image img:hover {
+  transform: translateY(-8px) rotate(3deg);
+}
+
+/* TOMBOL */
+.btn {
+  display: inline-block;
+  background: #216b57;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #d5a93e;
+  color: #173f36;
+  transform: translateY(-3px);
+}
+
+/* BAGIAN UMUM */
+.section {
+  padding: 75px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  color: #173f36;
+}
+
+.section-desc {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+/* KARTU FILOSOFI */
+.philosophy-card {
+  background: white;
+  border-radius: 22px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 35px;
+  box-shadow: 0 8px 25px #173f3610;
+}
+
+.philosophy-image {
+  flex: 1;
+  text-align: center;
+}
+
+.philosophy-image img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.philosophy-text {
+  flex: 2;
+}
+
+.philosophy-text h3 {
+  color: #21836b;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.philosophy-text p {
+  margin-bottom: 12px;
+}
+
+/* ANGGOTA */
+.members {
+  background: #e8f2e9;
+}
+
+.member-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.member-card {
+  background: white;
+  padding: 28px 15px;
   border-radius: 18px;
-  padding: 20px;
-  margin: 25px 0;
+  box-shadow: 0 5px 20px #173f3610;
+  transition: 0.3s;
 }
 
-.color-meaning p {
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px #173f3620;
+}
+
+.member-icon {
+  font-size: 35px;
   margin-bottom: 10px;
 }
 
-.conclusion {
-  font-weight: bold;
+.member-card h3 {
+  color: #21836b;
+  margin-bottom: 8px;
 }
 
-/* CANVA */
-.canva-section {
-  background: #ffb5dc;
+/* DESAIN CANVA */
+.design-section {
+  background: #fffaf0;
 }
 
-.canva-section > p:not(.subtitle) {
+.canva-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px #173f3620;
+}
+
+.canva-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* PENUTUP */
+.closing {
+  text-align: center;
+  padding: 65px 8%;
+  background: linear-gradient(135deg, #173f36, #287d65);
+  color: white;
+}
+
+.closing h2 {
+  color: #f3d47a;
+  font-size: clamp(25px, 4vw, 36px);
+  margin-bottom: 15px;
+}
+
+.closing p {
   max-width: 650px;
-  margin: 0 auto 30px;
-  font-size: 19px;
-}
-
-.canva-button {
-  background: white;
+  margin: 0 auto 15px;
 }
 
 /* FOOTER */
 footer {
-  background: #191919;
-  color: white;
-  padding: 60px 20px;
   text-align: center;
+  padding: 30px 15px;
+  background: #102d27;
+  color: white;
 }
 
-footer h2 {
-  font-size: 30px;
+footer h3 {
+  color: #f3d47a;
+  letter-spacing: 3px;
 }
 
-footer p {
+.copyright {
   margin-top: 10px;
-  color: #ddd;
+  font-size: 13px;
+  color: #c7d7d0;
 }
 
-/* RESPONSIVE HP */
-@media (max-width: 650px) {
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 768px) {
   .navbar {
     justify-content: center;
     text-align: center;
-    padding: 18px 12px;
   }
 
-  .navbar nav {
+  .nav-links {
     justify-content: center;
-    gap: 12px 18px;
-  }
-
-  .brand {
-    font-size: 20px;
+    gap: 12px;
   }
 
   .hero {
-    padding: 75px 20px 85px;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 7%;
   }
 
-  .hero-text {
-    font-size: 17px;
+  .hero-image img {
+    max-width: 230px;
   }
 
-  .girls {
-    gap: 18px;
+  .philosophy-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
   }
 
-  .face {
-    width: 85px;
-    height: 85px;
-    font-size: 28px;
-  }
-
-  .body {
-    width: 72px;
-    height: 68px;
-  }
-
-  .girl b {
-    font-size: 12px;
+  .member-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .section {
-    padding: 70px 20px;
-  }
-
-  .process-list {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  .process-card {
-    padding: 28px;
-  }
-
-  .logo-card {
-    padding: 22px 18px;
-    border-radius: 24px;
-  }
-
-  .logo-card > p,
-  .color-meaning p {
-    font-size: 16px;
-  }
-
-  .logo-image img,
-  .logo-foto {
-    max-width: 100%;
-    max-height: 350px;
+    padding: 55px 6%;
   }
 }
 
+@media (max-width: 400px) {
+  .member-container {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}
